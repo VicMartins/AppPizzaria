@@ -1,4 +1,20 @@
 /**/
+.container{
+  background-color:#0D0D0D;
+}
 h1{
   text-align: center;
+  
+}
+.corpo{
+  margin-top: 100px; 
+}
+button{
+  background-color:#F27405;
+  color: white;
+  font-size: 10px;
+}
+.jumbotron{
+margin-top: 40px;
+background: #6F7302;
 }
