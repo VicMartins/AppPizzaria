@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,24 +15,41 @@
 <body>
 
   <div class="container">
-
-    <h1 style="font-family:verdana">Cadastrar Pizza</h1>
     <div class="row">
-
-
+      <div class="col-xs-12">
+    <h1 style="font-family:verdana">Cadastrar Pizza</h1>
+      </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="">Sabor</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="">Valor</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+         <button class="btn btn-success btn-block">Salvar</button>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+         <button class="btn btn-primary btn-block" id="listarPizza">Listar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
