@@ -1,20 +1,41 @@
 /**/
 .container{
-  background-color:#0D0D0D;
+  background-color:#F2BB13;
 }
 h1{
   text-align: center;
-  
+  margin-top: 16px;
+  color: white;
+}
+
+.titulo{
+  color: white;
 }
 .corpo{
-  margin-top: 100px; 
+  margin-top: 10vh; 
+  color: white;
 }
 button{
-  background-color:#F27405;
+  background-color:#8C0303;
   color: white;
   font-size: 10px;
+  width:16vh;
+  height: 6vh;
+  border-radius:6px;
+
+}
+.botao{
+  margin-left:5vh;
+  margin-top: 5vh;
 }
 .jumbotron{
 margin-top: 40px;
-background: #6F7302;
+background:#0D0D0D;
+}
+img{
+  margin-left: 16vh;
+  margin-top: 7vh;
+}
+.labels{
+  margin-top:5vh;
 }
