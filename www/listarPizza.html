@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="components/loader.css">
+    <script src="https://kit.fontawesome.com/bc58fc4108.js" crossorigin="anonymous"></script>
     <script src="components/loader.js"></script>
     <script>
       $(document).ready(function(){
@@ -16,6 +17,82 @@
       <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- TODO: Please edit here -->
+
+   <div class="container">
+    <div class="jumbotron">
+       <button class="btn btn-dark voltar" id="back" onclick="javascript:location.href='index.html'"><i class="fas fa-arrow-left"></i> Voltar</button>
+       <div class="row">
+        <div class="col-xs-12">
+          <h1 style="font-family:verdana; color: white;" class="titulo">Cadastros</h1>
+           <img src="img/pizza.png" alt="pizza icon" class="logo" >
+        </div>
+       </div>
+     <div class="corpo">
+    <form method="post">
+    <div class="labels">
+      <div class="row">
+	      <div class="col-xs-12">
+          <div class="form-group">
+            <label class="labelListar"> Pizzas: </label>
+            <select class="form-control" id="selectListas" name="selectListas"></select>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group" id="codigo">
+          <label for="">Código:</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group" id="saborlista">
+          <label for="">Sabor:</label>
+          <input type="text" class="form-control" placeholder="Ex:Mussarela">
+          </div>
+        </div>
+      </div>
+        <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group" id="precoLista">
+          <label for="">Preço:</label>
+          <input type="text" class="form-control" placeholder="R$">
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+    <div class="botao">
+     <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+         <button class="btn btn-dark " id="salvarPizza"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+         <button class="btn btn-dark " id="editarPizza"><i class="fas fa-edit"></i></button>
+        </div>
+        </div>
+     </div>
+        <div class="row">
+        <div class="col-xs-6">
+        <div class="form-group">
+         <button class="btn btn-dark " id="cancelarPizza"><i class="fas fa-times"></i></button>
+         </div>
+        </div>
+         <div class="col-xs-6">
+        <div class="form-group">
+         <button class="btn btn-dark " id="deletarPizza"><i class="far fa-trash-alt"></i></button>
+           </div>
+         </div>
+         </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
 </body>
 </html>

@@ -39,3 +39,22 @@ img{
 .labels{
   margin-top:5vh;
 }
+
+#salvar{
+  font-size: 19px;
+}
+#listarPizza{
+   font-size: 19px;
+}
+.voltar{
+  background-color: transparent;
+}
+
+#back{
+  margin-top: -8%;
+  margin-left: -8%;
+}
+
+.logo{
+  width: 15vh;
+}
