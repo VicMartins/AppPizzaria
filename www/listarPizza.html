@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="components/loader.css">
     <script src="https://kit.fontawesome.com/bc58fc4108.js" crossorigin="anonymous"></script>
     <script src="components/loader.js"></script>
+    <script src="components/jquery-3.4.1.min.js"></script>
+    <script src="components/acao.js"></script>
     <script>
       $(document).ready(function(){
         carregaLista();
@@ -40,25 +42,25 @@
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <div class="form-group" id="codigoLista">
+        <div class="form-group" >
           <label for="">Código:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="codigoLista">
         </div>
       </div>
     </div>
      <div class="row">
       <div class="col-xs-12">
-        <div class="form-group" id="saborLista">
+        <div class="form-group" >
           <label for="">Sabor:</label>
-          <input type="text" class="form-control" placeholder="Ex:Mussarela">
+          <input type="text" class="form-control" placeholder="Ex:Mussarela" id="saborLista">
           </div>
         </div>
       </div>
         <div class="row">
       <div class="col-xs-12">
-        <div class="form-group" id="precoLista">
+        <div class="form-group" >
           <label for="">Preço:</label>
-          <input type="text" class="form-control" placeholder="R$">
+          <input type="text" class="form-control" placeholder="R$" id="precoLista">
           </div>
         </div>
       </div>
