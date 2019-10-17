@@ -68,4 +68,59 @@ $(document).on('click','#salvar',function(){
         }
     });
   });
+
+  $(document).on("click","#editarPizza",function(){
+    $("#saborLista").prop("readonly",false);
+    $("#precoLista").prop("readonly",false);
+  });
+
+   $(document).on("click","#cancelarPizza",function(){
+    $("#saborLista").val("");
+    $("#precoLista").val("");
+    $("#saborLista").prop("readonly",true);
+    $("#precoLista").prop("readonly",true);
+  });
+
+  $(document).on("click","#salvarPizza",function(){
+     var parametros = {
+       "codigo":$("#codigoLista").val(),
+       "sabor":$("#saborLista").val(),
+       "preco":$("#precoLista").val()
+     }
+     $.ajax({
+         type:"post",//como vou enviar os dados ao servidor
+        url:"https://stey-appropriations.000webhostapp.com/alterar.php",//para onde vou enviar
+        data:parametros,
+        //caso dê certo esse código é executado
+        success: function(data){
+          navigator.notification.alert("Alterado com sucesso!");
+          document.location.reload(true);
+        },
+        error: function(data){
+          navigator.notification.alert("Erro ao alterar,")
+        }
+     });
+  });
+
+   $(document).on("click","#deletarPizza",function(){
+     var parametros = {
+       "codigo":$("#codigoLista").val()
+     }
+     $.ajax({
+         type:"post",//como vou enviar os dados ao servidor
+        url:"https://stey-appropriations.000webhostapp.com/deletar.php",//para onde vou enviar
+        data:parametros,
+        //caso dê certo esse código é executado
+        success: function(data){
+          navigator.notification.alert(data);
+          location.reload();
+        },
+        error: function(data){
+          navigator.notification.alert("Erro ao deletar.")
+        }
+     });
+  });
+
+
+
    
